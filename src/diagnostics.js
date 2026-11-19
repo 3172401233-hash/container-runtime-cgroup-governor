@@ -1,0 +1,15 @@
+export const DiagnosticCode = Object.freeze({
+  PARENT_BUDGET_INSUFFICIENT: 'PARENT_BUDGET_INSUFFICIENT',
+  CRITICAL_PREEMPTION: 'CRITICAL_PREEMPTION',
+  MEMORY_RECLAIM_SHORTFALL: 'MEMORY_RECLAIM_SHORTFALL',
+  PID_CEILING: 'PID_CEILING',
+  OOM_RISK: 'OOM_RISK',
+  OVERHEAD_EXCEEDS_BUDGET: 'OVERHEAD_EXCEEDS_BUDGET',
+  VERSION_CONFLICT: 'VERSION_CONFLICT',
+  STALE_NODE: 'STALE_NODE',
+  INVALID_TREE: 'INVALID_TREE',
+});
+
+export function diagnostic(code, nodeId, message, details = {}) {
+  return { code, nodeId: nodeId ?? null, message, details };
+}

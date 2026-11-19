@@ -1,0 +1,14 @@
+{
+  "name": "container-runtime-cgroup-governor",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pure policy simulation of a container-runtime cgroup governor: consumes metrics and computes next-cycle CPU/memory/PID quotas. Performs no container or kernel operations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24.16.0"
+  },
+  "license": "MIT"
+}
